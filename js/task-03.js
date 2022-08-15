@@ -12,3 +12,12 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+const galleryEl = document.querySelector('.gallery');
+galleryEl.style.display = "flex";
+galleryEl.style.flexDirection = "column";
+
+const markup = images.map((image) => `<li><img src="${image.url}" alt="${image.alt}" width=600 /></li>`).join("");
+//join соединит строки массива в одну строку
+
+galleryEl.insertAdjacentHTML("afterbegin", markup);
