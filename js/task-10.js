@@ -42,4 +42,4 @@ function destroyBoxes() {
 
 // makeElement(size) {
 //   return `<div style="width:${size}px;height:${size}px;background-color:${getRandomHexColor()};"></div>`
-}
+//}
